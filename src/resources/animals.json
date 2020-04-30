@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Gatto",
+    "keywords":["kittens"],
+    "url":  "https://b.thumbs.redditmedia.com/kg_hUZMKvqzICRzlOLMuHJudhrsACiG6rZ3VUziiYcw.png"
+  },
+  {
+    "name": "Cane",
+    "keywords":["puppies"],
+    "url":  "https://pbs.twimg.com/profile_images/3540744128/7dd80644ae052f1b04180c41bbc674ab.png"
+  },
+  {
+    "name": "Ippopotamo",
+    "keywords":[ "hippo"],
+    "url":  "https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/cf/24/da/cf24da92-0cdb-089e-b13b-30ce0a9b2206/source/256x256bb.jpg"
+  },
+  {
+    "name": "Lupo",
+    "keywords":[ "baby wolf"],
+    "url":  "https://pbs.twimg.com/profile_images/3210926573/69be4fc1a49e0991a5981bc273edbed5.jpeg"
+  },
+  {
+    "name": "Gallina",
+    "keywords":[ "chicken animal"],
+    "url":  "https://pbs.twimg.com/profile_images/378800000444748619/e74c951227015ebf4b7d1a0e22721c39.jpeg"
+  },
+  {
+    "name": "scimmia",
+    "keywords":["monkey"],
+    "url":  "https://pbs.twimg.com/profile_images/738413005340348417/C-AGB_BO_400x400.jpg"
+  },
+  {
+    "name": "Gallo",
+    "keywords":["rooster"],
+    "url":  "https://pbs.twimg.com/profile_images/623199743984844800/PupXHelB_400x400.jpg"
+  },
+  {
+    "name": "Piccione",
+    "keywords":["pidgeons"],
+    "url":  "https://pbs.twimg.com/profile_images/3371130890/b9165b440fcfbe9d59a3ef64da275e6f.jpeg"
+  },
+  {
+    "name": "Gufo",
+    "keywords":[ "owl"],
+    "url":  "https://avatarfiles.alphacoders.com/815/81565.jpg"
+  }
+]
