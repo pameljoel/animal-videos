@@ -1,47 +1,47 @@
 [
   {
     "name": "Gatto",
-    "keywords":["kittens"],
+    "keywords":["kittens", "kitten", "little cats", "cats and puppies", "small cat"],
     "url":  "https://b.thumbs.redditmedia.com/kg_hUZMKvqzICRzlOLMuHJudhrsACiG6rZ3VUziiYcw.png"
   },
   {
     "name": "Cane",
-    "keywords":["puppies"],
+    "keywords":["puppies", "puppy", "small dog", "group of small dogs"],
     "url":  "https://pbs.twimg.com/profile_images/3540744128/7dd80644ae052f1b04180c41bbc674ab.png"
   },
   {
     "name": "Ippopotamo",
-    "keywords":[ "hippo"],
+    "keywords":[ "hippo", "hippo eating", "hippo watermelon", "cute hippo", "hippos"],
     "url":  "https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/cf/24/da/cf24da92-0cdb-089e-b13b-30ce0a9b2206/source/256x256bb.jpg"
   },
   {
     "name": "Lupo",
-    "keywords":[ "baby wolf"],
+    "keywords":[ "baby wolf", "small wolf", "wolfs howling", "group of wolfs"],
     "url":  "https://pbs.twimg.com/profile_images/3210926573/69be4fc1a49e0991a5981bc273edbed5.jpeg"
   },
   {
     "name": "Gallina",
-    "keywords":[ "chicken animal"],
+    "keywords":[ "chicken animal", "small chicken farm", "laying eggs", "chickens with hens", "hens"],
     "url":  "https://pbs.twimg.com/profile_images/378800000444748619/e74c951227015ebf4b7d1a0e22721c39.jpeg"
   },
   {
     "name": "scimmia",
-    "keywords":["monkey"],
+    "keywords":["monkey", "monkeys playing", "cute monkey", "cute macaco", "small monkeys"],
     "url":  "https://pbs.twimg.com/profile_images/738413005340348417/C-AGB_BO_400x400.jpg"
   },
   {
     "name": "Gallo",
-    "keywords":["rooster"],
+    "keywords":["rooster", "rooster and chicken", "rooster hens", "cute rooster"],
     "url":  "https://pbs.twimg.com/profile_images/623199743984844800/PupXHelB_400x400.jpg"
   },
   {
     "name": "Piccione",
-    "keywords":["pidgeons"],
+    "keywords":["pidgeons", "baby pidgeons", "small pidgeons", "pidgeons eating"],
     "url":  "https://pbs.twimg.com/profile_images/3371130890/b9165b440fcfbe9d59a3ef64da275e6f.jpeg"
   },
   {
     "name": "Gufo",
-    "keywords":[ "owl"],
+    "keywords":[ "owl", "owls", "cute owl", "small cute owl", "cute owls"],
     "url":  "https://avatarfiles.alphacoders.com/815/81565.jpg"
   }
 ]

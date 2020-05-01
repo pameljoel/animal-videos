@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import _ from 'lodash';
 import AnimalsJson from './resources/animals';
 
 import {Animal} from "./Animal";
@@ -79,9 +80,8 @@ function App() {
   },[]);
 
   const handleClick = (name, keywords) => {
-    const queryStringKeywords = keywords.join('+');
-
-    getVideoFromKeyword(queryStringKeywords);
+    const keyword = _.sample(keywords);
+    getVideoFromKeyword(keyword);
 
   };
 
