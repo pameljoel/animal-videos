@@ -30,6 +30,11 @@
     "url":  "https://pbs.twimg.com/profile_images/738413005340348417/C-AGB_BO_400x400.jpg"
   },
   {
+    "name": "Pecora",
+    "keywords": ["sheep", "sheeps", "cute baby sheep", "baby sheep", "baby sheeps", "cute baby sheeps"],
+    "url": "https://is4-ssl.mzstatic.com/image/thumb/Purple30/v4/e0/d2/c5/e0d2c556-8402-0c8d-89b4-0c0da0531826/source/256x256bb.jpg"
+  },
+  {
     "name": "Gallo",
     "keywords":["rooster", "rooster and chicken", "rooster hens", "cute rooster"],
     "url":  "https://pbs.twimg.com/profile_images/623199743984844800/PupXHelB_400x400.jpg"
@@ -48,5 +53,10 @@
     "name": "Orso",
     "keywords": ["bear", "bears", "cute baby bears", "baby bears", "baby bear", "cute baby bear"],
     "url": "https://pbs.twimg.com/profile_images/739220138679894017/MJa0Bu4j.jpg"
+  },
+  {
+    "name": "Capra",
+    "keywords": ["goat", "goats", "cute baby goat", "baby goat", "baby goat", "cute baby goats"],
+    "url": "https://i.pinimg.com/originals/91/40/26/914026f615d377d49ce4bd07c5fde2d9.jpg"
   }
 ]
