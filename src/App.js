@@ -7,6 +7,7 @@ import './Animal.scss';
 import './App.scss';
 import './Video.scss';
 import {Video} from "./Video";
+
 const KEY = 'AIzaSyCth3fzhizoG-9vOyfZ1xRnyLMHmQOvpmc';
 
 function App() {
@@ -17,6 +18,12 @@ function App() {
   useEffect(() => {
     setAnimals(AnimalsJson);
   }, []);
+
+
+  const getRandomAnimal = () => {
+    const animal = _.sample(AnimalsJson);
+    return _.sample(animal.keywords);
+  };
 
   const getVideoFromKeyword = (keyword = 'kitten') => {
     fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${keyword}&maxResults=1&key=${KEY}`)
@@ -30,7 +37,7 @@ function App() {
   };
 
   useEffect(() => {
-    getVideoFromKeyword()
+    getVideoFromKeyword(getRandomAnimal())
   },[]);
 
   const handleClick = (name, keywords) => {
