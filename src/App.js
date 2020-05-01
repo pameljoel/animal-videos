@@ -1,12 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import AnimalsJson from './resources/animals';
-import youtube from './youtube';
 
 import {Animal} from "./Animal";
 import './Animal.scss';
 import './App.scss';
 import './Video.scss';
 import {Video} from "./Video";
+const KEY = 'AIzaSyCth3fzhizoG-9vOyfZ1xRnyLMHmQOvpmc';
 
 const stub = {
   "kind": "youtube#searchListResponse",
@@ -54,46 +54,39 @@ const stub = {
   ]
 };
 
-const getVideo = (keyword = 'kitten') => youtube.get('/search', {
-  params: {
-    part: 'snippet',
-    q: keyword,
-    maxResults: 1,
-  }
-});
-
 function App() {
   const [animals, setAnimals] = useState([]);
-  const [videos, setVideos] = useState([]);
+  const [videos, setVideos] = useState(stub.items);
 
   useEffect(() => {
     setAnimals(AnimalsJson);
   }, []);
 
-  useEffect(() => {
-    getVideo().then(response => {
-      setVideos(response.data.items);
-    }).catch(err => {
-      console.log(err);
-      setVideos(stub.items);
-    });
+  const getVideoFromKeyword = (keyword = 'kitten') => {
+    fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${keyword}&maxResults=1&key=${KEY}`)
+      .then(response => response.json())
+      .then(response => {
+        setVideos(response.items);
+      })
+      .catch(err => {
+        console.log(err);
+        setVideos(stub.items);
+      });
+  };
 
-  }, [videos]);
+  useEffect(() => {
+    getVideoFromKeyword()
+  },[]);
 
   const handleClick = (name, keywords) => {
-   console.log('caricando video di ', name);
-   console.log('usando queste keywords ', keywords);
     const queryStringKeywords = keywords.join('+');
 
-    getVideo(queryStringKeywords).then(response => {
-      setVideos(response.data.items);
-    })
+    getVideoFromKeyword(queryStringKeywords);
 
   };
 
   return (
     <main>
-
       {videos && videos.map(video => {
         return <Video video={video}/>
       })}
