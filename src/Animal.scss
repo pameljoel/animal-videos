@@ -57,7 +57,6 @@ main {
         filter: brightness(0.8);
       }
       &:after {
-
         opacity: 1;
       }
     }
@@ -72,5 +71,15 @@ main {
     }
   }
 
+  &--selected {
+    .image {
+      &:after, &:hover:after {
+        opacity: 0;
+      }
+      img {
+        filter: brightness(.7);
+      }
+    }
+  }
 
 }
