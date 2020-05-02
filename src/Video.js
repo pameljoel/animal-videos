@@ -13,7 +13,8 @@ export const Video = (props) => {
         showinfo: 0,
         controls: 1,
         modestbranding: 1,
-        loop: 1
+        loop: 1,
+        allowfullscreen: 0,
       }
     }
   };
