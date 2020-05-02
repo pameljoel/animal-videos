@@ -10,6 +10,8 @@ import {Video} from "./Video";
 
 const KEY = 'AIzaSyCth3fzhizoG-9vOyfZ1xRnyLMHmQOvpmc';
 
+const isDev = false;
+
 function App() {
   const [animals, setAnimals] = useState([]);
   const [selected, setSelected] = useState(null);
@@ -17,6 +19,7 @@ function App() {
 
   useEffect(() => {
     setAnimals(AnimalsJson);
+    !isDev && getVideoFromKeyword(getRandomAnimal())
   }, []);
 
 
@@ -35,10 +38,6 @@ function App() {
         console.log(err);
       });
   };
-
-  useEffect(() => {
-    getVideoFromKeyword(getRandomAnimal())
-  },[]);
 
   const handleClick = (name, keywords) => {
     const keyword = _.sample(keywords);
